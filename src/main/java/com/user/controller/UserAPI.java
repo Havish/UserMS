@@ -44,7 +44,7 @@ public class UserAPI {
 	private static final String TOPIC = "Test";
 
 			
-	@GetMapping("/publish/{message}") public String post(@PathVariable("message")
+	/*@GetMapping("/publish/{message}") public String post(@PathVariable("message")
 			  final String message) {
 			  
 			  kafkaTemplate.send(TOPIC,message);
@@ -53,7 +53,7 @@ public class UserAPI {
 			  
 			  return "Published successfully"; 
 	}
-	
+	*/
 	
 	@PostMapping(value = "/buyer/register")
 	public ResponseEntity<String> registerBuyer(@RequestBody BuyerDTO buyerDto){
